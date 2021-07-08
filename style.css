@@ -1,0 +1,187 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent: hsl(277, 84%, 61%);
+  --main-headling: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-h: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  background-color: var(--main-background);
+  font-family: Lexend Deca;
+}
+
+.container {
+  min-width: 300px;
+  max-width: 85%;
+  margin: 50px auto;
+  background-color: var(--card-background);
+  border-radius: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  font-family: Inter;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h1,
+h3 {
+  font-weight: 700;
+  color: var(--main-headling);
+}
+
+#one-wierd-ass-word {
+  color: var(--accent);
+}
+
+.fancy-img {
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.overlay {
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent);
+  opacity: 0.6;
+}
+
+img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  display: block;
+}
+
+.text-box {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header,
+.bottom-margin,
+.txt {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.txt {
+  color: var(--main-paragraph);
+  font-size: 15px;
+  line-height: 25px;
+  word-spacing: 2px;
+}
+
+.stats {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat {
+  text-align: center;
+  width: 100%;
+}
+
+.stat p {
+  color: var(--stat-h);
+}
+
+.stat h3 {
+  font-size: 22px;
+}
+
+@media (min-width: 900px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .fancy-img {
+    max-width: 50%;
+    width: auto;
+    order: 2;
+  }
+
+  .text-box {
+    padding: 50px;
+    flex: 1;
+    order: 1;
+  }
+
+  img {
+    height: 100%;
+    max-height: none;
+    width: auto;
+    display: block;
+  }
+
+  .text-box {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .header {
+    flex: 1;
+  }
+
+  .txt {
+    flex: 1;
+  }
+
+  .header,
+  .stat,
+  .txt {
+    text-align: start;
+  }
+
+  .header,
+  .txt,
+  .bottom-margin {
+    margin: 0;
+  }
+
+  .stats {
+    flex: 2;
+    align-items: flex-end;
+  }
+
+  .stat {
+    width: 33.33%;
+  }
+}

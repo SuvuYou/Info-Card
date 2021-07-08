@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lexend+Deca"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="fancy-img">
+        <div class="overlay"></div>
+        <picture>
+          <source
+            srcset="images/image-header-mobile.jpg"
+            media="(max-width: 900px)"
+          />
+          <source srcset="images/image-header-desktop.jpg" />
+          <img src="images/image-header-mobile.jpg" alt="Flowers" />
+        </picture>
+      </div>
+      <div class="text-box">
+        <div class="header">
+          <h1>
+            Get <span id="one-wierd-ass-word">insights</span> that help your
+            business grow.
+          </h1>
+        </div>
+        <p class="txt">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="stats">
+          <div class="stat bottom-margin">
+            <h3>10k+</h3>
+            <p>companies</p>
+          </div>
+          <div class="stat bottom-margin">
+            <h3>314</h3>
+            <p>templates</p>
+          </div>
+          <div class="stat">
+            <h3>12M+</h3>
+            <p>queries</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your mama</a>.
+    </div>
+  </body>
+</html>
